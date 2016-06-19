@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }} | Dougal MacPherson</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <ul class="pure-menu-list">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/work">Work</a>
+                    <!--<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+                        <a href="#" class="pure-menu-link">Services</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            {{{ contents }}}
+        </div>
+        {{> footer }}
+    </div>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!--<script type="text/javascript" src="slick/slick.min.js"></script>-->
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
