@@ -1,0 +1,13 @@
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu, #menu a,
+.menu-link,
+.slick-dots li button {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}

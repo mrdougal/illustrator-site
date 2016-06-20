@@ -1,14 +1,17 @@
-$colourMain: #191818;
-$colourHero: #1f8dd6;
-$colourAlt: #fff;
-$textSizeDefault: 14px;
-$paddingDefault: .8em;
+$colour-main: #171717;
+$colour-hero: #1f8dd6;
+$colour-alt: #fff;
+$text-size: 16px;
+$line-height: 24px;
+$padding-default: .8em;
 $menu-width: 200px;
+$font-default: 'Georgia', 'Times New Roman', Times, serif;
+$font-heading: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
-$slick-arrow-color: #333;
-$slick-arrow-size: $paddingDefault*2;
-$slick-dot-color: #333;
-$slick-dot-color-active: darken($slick-dot-color, 20%);
-$slick-dot-size: $textSizeDefault;
-$slick-padding: $paddingDefault*3;
+$slick-arrow-color: $colour-main;
+$slick-arrow-size: $padding-default*2;
+$slick-dot-color: $colour-main;
+$slick-dot-color-active: $colour-hero;
+$slick-dot-size: $text-size;
+$slick-padding: $padding-default*3;

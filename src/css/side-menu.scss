@@ -5,50 +5,30 @@
     height: auto;
 }
 
-/*
-Add transition to containers so they can push in and out.
-*/
-#layout,
-#menu,
-.menu-link {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-/*
-This is the parent `<div>` that contains the menu and the content area.
-*/
 #layout {
     position: relative;
     padding-left: 0;
-}
-    #layout.active #menu {
-        left: $menu-width;
-        width: $menu-width;
-    }
 
-    #layout.active .menu-link {
-        left: $menu-width;
-    }
-/*
-The content `<div>` is where all your content goes.
-*/
-.content {
+    &.active {
+        #menu {
+            left: $menu-width;
+            width: $menu-width;
+        }
+
+        .menu-link {
+            left: $menu-width;
+        }
+    } 
+}
+
+#content {
     margin: 0 auto;
-    padding: 0 2em;
+    padding: $padding-default*4;
+    padding-top: $padding-default*5;
     max-width: 800px;
-    margin-bottom: $paddingDefault;
+    margin-bottom: $padding-default;
     line-height: 1.6em;
 }
-
-
-/*
-The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
-appears on the left side of the page.
-*/
 
 #menu {
     margin-left: -$menu-width; /* "#menu" width */
@@ -58,33 +38,32 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    // background: lighten($colourMain, 50%);
+    // background: lighten($colour-main, 50%);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-}
-    /*
-    All anchors inside the menu should be styled like this.
-    */
-    #menu {
 
-        a {
-            color: $colourMain;
-            border: none;
-            padding: $paddingDefault $paddingDefault*2;
-            display: block;
-            text-decoration: none;
+    a {
+        color: $colour-main;
+        font-family: $font-heading;
+        text-transform: uppercase;
+        letter-spacing: $text-size/4;
+        font-weight: bold;
+        border: none;
+        padding: $padding-default $padding-default*2;
+        display: block;
+        text-decoration: none;
 
-            &:first-child {
-                padding-top: $paddingDefault*2;
-            }
-            &:hover {
-                color: $colourHero;
-            }
+        &:first-child {
+            padding-top: $padding-default*2;
         }
-        .pure-menu-selected {
-            font-weight: bold;
+        &:hover {
+            color: $colour-hero;
         }
-    } 
+    }
+    .pure-menu-selected {
+        font-weight: bold;
+    }
+} 
 
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -149,10 +128,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
 
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
+    #content {
+        padding: $padding-default*4;
+        // padding-right: $padding-default*2;
     }
 
     #layout {
@@ -161,6 +139,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
     #menu {
         left: $menu-width;
+        padding-top: $padding-default*2.5;
     }
 
     .menu-link {
@@ -187,9 +166,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #menu {
-        background-color: $colourMain;
+        background-color: $colour-main;
         a {
-            color: $colourAlt;
+            color: $colour-alt;
         }
     }
 }

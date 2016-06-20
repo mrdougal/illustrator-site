@@ -4,11 +4,7 @@ var Metalsmith = require('metalsmith'),
     watch      = require('metalsmith-watch'),
     templates  = require('metalsmith-templates'),
     sass       = require('metalsmith-sass'),
-    Handlebars = require('handlebars'),
-    fs         = require('fs');
-
-Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
-
+    Handlebars = require('handlebars');
 
 Metalsmith(__dirname)
     .use(markdown())

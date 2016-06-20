@@ -1,27 +1,47 @@
 @import 'variables';
 
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: $textSizeDefault;
-    color: $colourMain;
+    font-family: $font-default;
+    font-size: $text-size;
+    color: $colour-main;
     margin: 0;
     padding: 0;
+
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 body {
-    background-color: $colourAlt;
-    padding: ($paddingDefault * 4) ($paddingDefault * 10);
+    background-color: $colour-alt;
+    // padding: ($padding-default * 4) ($padding-default * 10);
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-heading;
+    font-size: $text-size;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-bottom: $padding-default;
+    letter-spacing: $text-size/4;
 }
 
 h1, h2 {
-    font-size: $paddingDefault*2;
-    padding-bottom: $paddingDefault;
+    font-size: $text-size*1.25;
+    text-transform: uppercase;
+    letter-spacing: $text-size/4;
 }
 
 p {
-    padding: $paddingDefault 0;
+    padding: $padding-default 0;
 }
+
 
 @import 'side-menu';
 @import 'slick/main';
 @import 'slick/theme';
+@import 'transitions';

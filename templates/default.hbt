@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
     <div id="layout">
         <!-- Menu toggle -->
         <a href="#menu" id="menuLink" class="menu-link">
@@ -21,20 +20,13 @@
                     <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="/work">Work</a>
-                    <!--<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-                    <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                        <a href="#" class="pure-menu-link">Services</a>
-                    </li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>-->
                 </ul>
             </div>
         </div>
 
-        <div id="main">
+        <div id="content">
             {{{ contents }}}
         </div>
-        {{> footer }}
     </div>
 
 

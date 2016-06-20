@@ -12,5 +12,5 @@ Since then I've illustrated for tech [websites](http://alistapart.com) and [conf
 
 I live in the southern hemisphere with my wife, son, daughter and a cat called monster. 
 
-He shares his artwork on Instagram/Twitter/FaceBook as @15mindrawings
+You can find me as 15mindrawings on [Instagram](https://instagram.com/15mindrawings), [Twitter](https://twitter.com/15mindrawings) and [Facebook](https://facebook.com/15mindrawings)
 
