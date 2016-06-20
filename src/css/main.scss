@@ -26,7 +26,6 @@ h1, h2, h3, h4 {
     font-weight: bold;
     margin: 0;
     padding: 0;
-    padding-bottom: $padding-default;
     letter-spacing: $text-size/4;
 }
 
@@ -36,10 +35,30 @@ h1, h2 {
     letter-spacing: $text-size/4;
 }
 
+h1 {
+    padding-bottom: $padding-default;
+}
+
+h2, h3 {
+    font-size: $text-size*.9;
+    padding-top: $padding-layout;
+    border-bottom: 1px $colour-main solid;
+}
+
 p {
     padding: $padding-default 0;
 }
 
+.hero {
+    margin-top: -$padding-layout;
+    max-width: 100%;
+    height: auto;
+    border-bottom: 3px $colour-main solid;   
+}
+
+.hero + h1 {
+    padding-top: $padding-default*2;
+}
 
 @import 'side-menu';
 @import 'slick/main';

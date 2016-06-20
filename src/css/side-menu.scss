@@ -22,11 +22,11 @@
 }
 
 #content {
-    margin: 0 auto;
-    padding: $padding-default*4;
-    padding-top: $padding-default*5;
+    margin: 0;
+    padding: $padding-layout;
+    // padding-top: $padding-default*5;
     max-width: 800px;
-    margin-bottom: $padding-default;
+    margin-bottom: $padding-layout;
     line-height: 1.6em;
 }
 
