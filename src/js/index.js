@@ -2,7 +2,9 @@
 $(document).ready(function(){
   $('.slideshow').slick({
     dots: true,
-    arrows: true
+    arrows: true,
+    infinite: true,
+    lazyLoad: 'ondemand'
   });
 
   $('#menuLink').click(

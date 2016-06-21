@@ -2,7 +2,6 @@
 title: About me
 template: default.hbt
 ---
-
 <img src="/work/dougal-macpherson.png" class="hero" alt="Dougal MacPherson" />
 
 # Hello, I illustrate childrens books
@@ -17,9 +16,9 @@ I live in Melbourne Australia with my wife, son, daughter and a cat called monst
 ## Contact
 
 You can find me as **15mindrawings** on [Instagram](https://instagram.com/15mindrawings), [Twitter](https://twitter.com/15mindrawings) and [Facebook](https://facebook.com/15mindrawings),
-were I mainly draw pictures of my children as they grow up.
+were I mainly draw pictures of my children as they grow up, and occasionally snippets from books that i'm illustratng.
 
-I am represented by [Brianne Johnson](http://www.publishersmarketplace.com/members/bjohnson/) at [Writers House](http://www.writershouse.com/), it's best you speack to her if you'd like me to illustrate a book. She's awesome.
+I am represented by [Brianne Johnson](http://www.publishersmarketplace.com/members/bjohnson/) at [Writers House](http://www.writershouse.com/), it's best you speak to her if you'd like me to illustrate a book. She's awesome.
 
 ## Press
 
